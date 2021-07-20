@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container my-2">
+    <p class="lead">Ingrese Contactos</p>
+    <form action="">
+      <input type="text" id="nombre" placeholder="Ingrese Nombre" class="form-control my-2">
+      <input type="number" id="edad" placeholder="Ingrese Edad" class="form-control my-2">
+      <input type="text" id="direccion" placeholder="Ingrese Direccion" class="form-control my-2">
+      <input type="text" id="telefono" placeholder="Ingrese Telefono" class="form-control my-2">
+      <button id="boton" class="btn btn-success" type="reset" onclick="capturar()">Agregar</button>
+    </form>
+  </div>
+  <div class="container">
+    <table class="table table-dark table-striped" id="tabla">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Direccion</th>
+          <th>Telefono</th>
+        </tr>
+      </thead>
+      
+    </table>
+  </div>
+  <script src="javascript/app.js"></script>
+</body>
+</html>
